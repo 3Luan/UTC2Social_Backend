@@ -1,13 +1,13 @@
 const express = require("express");
-const initRoutes = require("./src/routes/initRoutes");
-const connectDB = require("./src/config/database");
+const initRoutes = require("../src/routes/initRoutes");
+const connectDB = require("../src/config/database");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 const app = express();
 app.use(express.json());
 const cors = require("cors");
 const path = require("path"); // Để xử lý đường dẫn tệp
-require("./src/config/passport");
+require("../src/config/passport");
 
 // Cấu hình các tệp tĩnh từ thư mục uploads
 app.use(express.static("uploads/images"));
