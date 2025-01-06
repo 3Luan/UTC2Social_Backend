@@ -7,7 +7,7 @@ let addCourse = async (req, res) => {
     if (!name || name.trim() === "") {
       throw {
         status: 400,
-        message: "Không được bỏ trống thông tin",
+        message: "Không được bỏ trống thông tin!",
       };
     }
 
