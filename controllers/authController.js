@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const sendResponse = require("../utils/sendResponse");
 require("dotenv").config();
 const passport = require("passport");
-const VerificationCodeModel = require("./models/VerificationCodeModel");
+const VerificationCodeModel = require("../models/VerificationCodeModel");
 const sendMail = require("../utils/sendEmail");
 
 let register = async (req, res) => {
